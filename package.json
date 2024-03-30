@@ -14,11 +14,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.136",
     "@types/chai": "^4.3.14",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.30",
     "chai": "^4.4.1",
     "mocha": "^10.4.0",
+    "serverless-esbuild": "^1.52.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
   },

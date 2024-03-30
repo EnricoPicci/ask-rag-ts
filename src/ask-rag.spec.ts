@@ -14,8 +14,9 @@ describe(`askRag$`, () => {
         const embeddingsModel = 'text-embedding-3-small';
         const llmModel = "gpt-3.5-turbo-0125"
         const collectionName = `jira_stories_small`;
+        const numberOfChunks = 3;
 
-        askRag$(query, prompt_instructions, embeddingsModel, llmModel, qdrantClient, openaiCLient, collectionName, 3).pipe(
+        askRag$(query, prompt_instructions, embeddingsModel, llmModel, qdrantClient, openaiCLient, collectionName, numberOfChunks).pipe(
             tap((answer) => {
                 expect(answer).not.null;
                 expect(typeof answer).equal('string');
